@@ -28,7 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/spectre.scss/spectre-exp.scss",
+              "./node_modules/spectre.scss/spectre-icons.scss",
+              "./node_modules/spectre.scss/spectre.scss",
+              "./node_modules/dashboard-ui-framework/assets/scss/main.scss"
             ],
             "scripts": []
           },

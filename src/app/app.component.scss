@@ -1,0 +1,173 @@
+@function rem($rem_size) {
+    @return ($rem_size/14) + rem;
+  }
+  
+  .nav-menu {
+    padding: 0 rem(24);
+    background: #fff;
+    height: rem(60);
+    border-bottom: 1px solid #e4e8f0;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    .menu-main {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left-nav {
+        display: flex;
+        align-items: center;
+        .powered-by {
+          display: flex;
+          align-items: center;
+          span {
+            white-space: nowrap;
+            margin: 0 6px 0 1rem;
+            font-size: 12px;
+            color: #2e384d;
+          }
+          > img {
+            max-width: 160px;
+          }
+        }
+        .logo-main {
+          img {
+            width: rem(140);
+          }
+        }
+      }
+      .right-nav {
+        display: flex;
+        align-items: center;
+        flex: auto;
+        justify-content: flex-end;
+        .nav-menu-items {
+          display: flex;
+          margin: 0;
+          list-style-type: none;
+          width: 49%;
+          > li {
+            margin: 0 34px;
+            transition: ease-in-out 0.2s;
+            position: relative;
+            a {
+              cursor: pointer;
+              text-decoration: none;
+              font-size: 1.14285714286rem;
+              color: #2e384d;
+              transition: ease-in-out 0.2s;
+              font-weight: 500;
+              &:hover {
+                color: #0052cc;
+              }
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              bottom: -19px;
+              left: 50%;
+              transform: translateX(-50%);
+              height: 3px;
+              width: 0;
+              background: transparent;
+              transition: ease-in-out 0.2s;
+            }
+            &.active {
+              a {
+                color: #0052cc;
+                // font-weight: 500;
+              }
+              &:before {
+                background: #0052cc;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .header-profile {
+          display: flex;
+          align-items: center;
+          // margin-left: 5rem;
+          @media (max-width: 1280px) {
+            // margin-left: 1rem;
+          }
+          .dropdown {
+            .dropdown-toggle {
+              color: #2e384d;
+              font-size: 1.14285714286rem;
+              padding: 0;
+              display: inline;
+              border-radius: 0;
+              position: relative;
+              margin: 0;
+              // height: auto;
+              line-height: normal;
+              > span {
+                display: inline-block;
+                max-width: 230px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding-right: 18px;
+                border-left: 1.5px solid #e4e8f0;
+                padding-left: 8.5px;
+              }
+              &:focus {
+                box-shadow: none;
+                background: transparent;
+              }
+              svg {
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin-left: 10px;
+              }
+            }
+            // .menu {
+            //   min-width: 10rem;
+            //   padding: 0.5rem 0.7rem 0.7rem;
+            //   > li {
+            //     margin: 0;
+            //     cursor: pointer;
+            //     &:hover {
+            //       background: transparent;
+            //       color: #0052cc;
+            //     }
+            //   }
+            // }
+          }
+          .user-profile {
+            .avatar-sm {
+              height: 32px !important;
+              width: 32px !important;
+              border: 2px solid #0052cc;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .Link-Disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  ul.menu {
+    &.logout-btn {
+      min-width: 10rem;
+      padding: 0.5rem 0.7rem 0.7rem;
+      > li {
+        &:hover {
+          background: transparent;
+          color: #0052cc;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  

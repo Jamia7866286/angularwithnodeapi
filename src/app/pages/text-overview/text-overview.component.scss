@@ -1,0 +1,136 @@
+@function rem($rem_size) {
+    @return ($rem_size/14) + rem;
+  }
+  
+  .overview-topic {
+    .home-content {
+      // padding: 0 rem(31) 0 rem(38);
+      padding: 2rem rem(31) 10px;
+      height: calc(100vh - 60px);
+      overflow: auto;
+      .columns-divided {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        > .column1 {
+          // -webkit-box-flex: 1;
+          // flex: 1;
+          width: 33.3333333333%;
+          padding: 7px;
+        }
+        
+        &.topic-summary {
+          > .column1 {
+            width: 100%;
+            .top-topics {
+              > ul {
+                list-style-type: disc;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .common-widget-height {
+    // height: 326px;
+    &.emotions-height-common {
+      height: 422px;
+      @media (min-width: 1310px) {
+        height: 402px;
+      }
+      @media (min-width: 1645px) {
+        height: 382px;
+      }
+    }
+    dashboard-widget {
+      .widget-content {
+        .overall-topic-priorities {
+          width: 100%;
+          ::ng-deep {
+            app-priority {
+              .interesting-keyword {
+                .sentiment-inner {
+                  .sentiment-sign {
+                    .sentiment-img {
+                      width: 50% !important;
+                    }
+                  }
+                }
+              }
+            }
+            app-emotions {
+              .interesting-keyword {
+                .sentiment-inner {
+                  .sentiment-sign {
+                    .sentiment-img {
+                      width: 50%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .overall-topic-sentiment {
+          width: 100%;
+          ::ng-deep {
+            app-sentiment,
+            app-intent {
+              .interesting-keyword {
+                .sentiment-inner {
+                  .sentiment-sign {
+                    .sentiment-img {
+                      width: 50%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // top-topics widget css
+  .top-topics {
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      > li {
+        margin: 0;
+        color: #505f79;
+        font-weight: 500;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  
+  // Total-conversation
+  .conversation-widget {
+    display: flex;
+    align-items: center;
+    // .total-conversation {
+    //   margin-left: 10px;
+    //   span {
+    //     color: #0052cc;
+    //     font-weight: 500;
+    //     font-size: rem(38);
+    //   }
+    // }
+  }
+  
+  .total-conversation {
+    margin-left: 10px;
+    span {
+      color: #0052cc;
+      font-weight: 700;
+      font-size: rem(48);
+    }
+  }
+  

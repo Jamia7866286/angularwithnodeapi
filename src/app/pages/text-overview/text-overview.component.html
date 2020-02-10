@@ -1,0 +1,207 @@
+<div class="overview-topic">
+  <!-- Filter section -->
+  <!-- <div class="filter-main">
+    <div class="topic-text">Topic Overview</div>
+    <div class="date-filter">
+      <div class="date-filter-text">Date Filter</div>
+      <div class="date-input-box">
+        <ui-date-range-picker-v2 [data]="dates" [settings]="dateSettings" (onFilterChange)="OnDateChange($event)"></ui-date-range-picker-v2>
+      </div>
+    </div>
+  </div> -->
+  <!-- Overview topic section -->
+  <div class="home-content">
+    <div class="columns-divided">
+      <div class="column1">
+        <div class="nested-columns">
+          <div class="column1">
+            <div class="nps-wrapper">
+              <div
+                class="nps-title nps-head common-widget-height"
+                style="height: 240px;"
+              >
+                <!-- <dashboard-widget> -->
+                <div class="widget-head nps-heading">
+                  <div class="conversation-widget">
+                    <span>Total Number of Conversation -</span>
+                    <!-- <div class="total-conversation">
+                        <span>235M</span>
+                      </div> -->
+                  </div>
+                </div>
+                <div
+                  class="widget-content nps-score"
+                  style="display: flex;justify-content: center;align-items: center;height: 138px;"
+                >
+                  <div class="total-conversation">
+                    <span>349M</span>
+                  </div>
+                </div>
+                <!-- </dashboard-widget> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="nps-wrapper">
+          <div
+            class="nps-title nps-head common-widget-height"
+            style="height: 240px;"
+          >
+            <!-- <dashboard-widget> -->
+            <div class="widget-head nps-heading">
+              Overall Topic INTENT
+            </div>
+            <div
+              class="widget-content nps-score"
+              style="display: flex;justify-content: center"
+            >
+              <div class="overall-topic-sentiment">
+                <app-intent></app-intent>
+              </div>
+            </div>
+            <!-- </dashboard-widget> -->
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="nps-wrapper">
+          <div
+            class="nps-title nps-head common-widget-height"
+            style="height: 240px;"
+          >
+            <!-- <dashboard-widget> -->
+            <div class="widget-head nps-heading">
+              Overall Topic Sentiments
+            </div>
+            <div
+              class="widget-content nps-score"
+              style="display: flex;justify-content: center"
+            >
+              <div class="overall-topic-sentiment">
+                <app-sentiments></app-sentiments>
+              </div>
+            </div>
+            <!-- </dashboard-widget> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns-divided topic-intent">
+      <div class="column1">
+        <div class="nps-wrapper">
+          <div
+            class="nps-title nps-head common-widget-height emotions-height-common"
+          >
+            <!-- <dashboard-widget> -->
+            <div class="widget-head nps-heading">
+              Top 5 Topics
+            </div>
+            <div class="widget-content nps-score" style="display: flex;">
+              <div class="top-topics">
+                <ul>
+                  <li>2) Credit Card</li>
+                  <li>3) Credit Card</li>
+                  <li>4) Credit Card</li>
+                  <li>5) Credit Card</li>
+                </ul>
+              </div>
+            </div>
+            <!-- </dashboard-widget> -->
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="nps-wrapper">
+          <div
+            class="nps-title nps-head common-widget-height emotions-height-common"
+          >
+            <!-- <dashboard-widget> -->
+            <div class="widget-head nps-heading">
+              Overall Topic Priorities
+            </div>
+            <div
+              class="widget-content nps-score"
+              style="display: flex;justify-content: center"
+            >
+              <div class="overall-topic-priorities">
+                <app-priorities></app-priorities>
+              </div>
+            </div>
+            <!-- </dashboard-widget> -->
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="nps-wrapper">
+          <div
+            class="nps-title nps-head common-widget-height emotions-height-common"
+          >
+            <!-- <dashboard-widget> -->
+            <div class="widget-head nps-heading">
+              Overall Topic EMOTIONS
+            </div>
+            <div
+              class="widget-content nps-score"
+              style="display: flex;justify-content: center"
+            >
+              <div class="overall-topic-priorities">
+                <app-emotions></app-emotions>
+              </div>
+            </div>
+            <!-- </dashboard-widget> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns-divided topic-summary">
+      <div class="column1">
+        <div class="nps-wrapper">
+          <div class="nps-title nps-head common-widget-height">
+            <!-- <dashboard-widget> -->
+            <div class="widget-head nps-heading">
+              All Topics Summary
+            </div>
+            <div class="widget-content nps-score" style="display: flex;">
+              <div class="top-topics">
+                <ul>
+                  <li>
+                    Lorem Ipsum has been the industry’s standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make .
+                  </li>
+                  <li>
+                    Lorem Ipsum has been the industry’s standard dumm, when an
+                    unknown printer took a galley of type and scrambled it to
+                    make .
+                  </li>
+                  <li>
+                    Lorem Ipsum has been the industry’s standard dummy text ever
+                    since the 1500s, when to make .
+                  </li>
+                  <li>
+                    Lorem Ipsum has been the industry’s standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make .
+                  </li>
+                  <li>
+                    Lorem Ipsum has been the industry’s standard dumm, when an
+                    unknown printer took a galley of type and scrambled it to
+                    make .
+                  </li>
+                  <li>
+                    Lorem Ipsum has been the industry’s standard dummy text ever
+                    since the 1500s, when to make .
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- </dashboard-widget> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

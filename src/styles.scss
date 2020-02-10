@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+@function rem($rem_size) {
+    @return ($rem_size/14) + rem;
+  }
+  
+  body {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  // For heading of eacg card
+  .nps-heading {
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #2e384d;
+    font-size: rem(14);
+  }
+  
+  // For structure of each card
+  .nps-head {
+    background: white;
+    padding: 20px;
+    border: 2px solid #e4e8f0;
+    border-radius: 5px;
+    @media (max-width: 600px) {
+      padding: 0 0.8rem;
+    }
+  }
+  
+  // input placeholder color css
+  ::-webkit-input-placeholder,
+  ::placeholder,
+  :placeholder-shown {
+    color: #7a869a !important;
+  }
+  ::-ms-input-placeholder,
+  :-ms-input-placeholder,
+  ::-moz-placeholder,
+  :-moz-placeholder {
+    color: #7a869a !important;
+  }
+  // End input placeholder color css
+  
+  // common filter css
+  .filter-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px 5px;
+    align-items: center;
+    .topic-text {
+      color: #2e384d;
+      font-weight: 500;
+      font-size: rem(20);
+    }
+    .date-filter {
+      display: flex;
+      align-items: center;
+      .date-filter-text {
+        color: #505f79;
+        font-size: rem(16);
+        font-weight: 500;
+        margin-right: rem(8);
+      }
+      // ::ng-deep {
+      .date-input-box {
+        ui-date-range-picker-v2 {
+          .form-group {
+            .start-end-date {
+              border: 2px solid #dfe1e5;
+              border-radius: 5px;
+              background: #fff;
+              height: 40px;
+              line-height: 1rem;
+              padding: 11px;
+              > span {
+                color: #505f79;
+              }
+            }
+            ngx-daterangepicker-material {
+              .md-drppicker {
+                left: auto !important;
+                right: 0 !important;
+                top: 50px !important;
+              }
+            }
+          }
+  
+          // }
+        }
+      }
+    }
+  }
+  // End common filter css
+  
